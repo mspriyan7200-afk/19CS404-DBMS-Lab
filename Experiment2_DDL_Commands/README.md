@@ -105,15 +105,18 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1213" height="426" alt="image" src="https://github.com/user-attachments/assets/61095fbf-f94d-4626-9c7f-8561af007ba4" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+CREATE TABLE Attendance(AttendanceID integer primary key,EmployeeID integer,AttendanceDate DATE,
+Status TEXT CHECK(Status IN ('Present','Absent','Leave')),
+FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeId));
 ```
 
 **Output:**
+<img width="1236" height="377" alt="image" src="https://github.com/user-attachments/assets/ee9a2806-c032-4e40-9743-04cb74ce2d98" />
 
-![Output1](output.png)
 
 **Question 2**
 ---
